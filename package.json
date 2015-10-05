@@ -1,7 +1,7 @@
 {
   "name": "unicorn-light-ui",
   "theme": "ui",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "A retro colored UI theme with custom file icons and slim tabs",
   "license": "MIT",
   "repository": "https://github.com/unicorn/atom-unicorn-light-ui",
