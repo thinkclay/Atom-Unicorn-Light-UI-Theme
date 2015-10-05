@@ -12,7 +12,20 @@ atom-pane atom-text-editor {
   }
 }
 
-atom-text-editor {
+atom-text-editor[mini] {
+  border: 1px solid @input-border-color;
+  box-shadow: none;
+  border-radius: @component-border-radius;
+  padding-left: @component-padding/2;
+
+  .cursor {
+    border-color: @input-text-color;
+  }
+
+  .selection .region {
+    background-color: darken(@input-background-color, 10%);
+  }
+
   .wrap-guide {
     background-color: @coffee;
   }
@@ -79,17 +92,6 @@ atom-text-editor {
     -webkit-animation-duration: 1s;
     -webkit-animation-iteration-count: 1;
   }
-}
-
-atom-text-editor[mini] {
-  border: 1px solid @input-border-color;
-  box-shadow: none;
-  border-radius: @component-border-radius;
-  padding-left: @component-padding/2;
-
-  .cursor { border-color: @input-text-color; }
-
-  .selection .region { background-color: darken(@input-background-color, 10%); }
 }
 
 atom-text-editor[mini].is-focused {
